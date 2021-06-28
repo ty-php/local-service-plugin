@@ -1,0 +1,16 @@
+{
+  "name": "xinmo/service-plugin",
+  "description": "自定义包安装路径插件",
+  "type": "composer-plugin",
+  "autoload": {
+    "psr-4": {
+      "XinMo\\ServicePlugin\\": "src"
+    }
+  },
+  "extra": {
+    "class": "ServiceInstallerPlugin"
+  },
+  "require": {
+    "composer-plugin-api": ">=v1.0"
+  }
+}
