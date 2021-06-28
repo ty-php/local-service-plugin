@@ -16,7 +16,7 @@ class ServiceInstaller extends LibraryInstaller
             throw new \InvalidArgumentException('The package name:' . $prefix . ',unable to installed, should always start their package name with "wwwcto/plugin-"');
         }
 
-        return 'common/service' . substr($package->getPrettyName(), 14);
+        return 'common/service/' . substr($package->getPrettyName(), 14);
     }
 
     /**
