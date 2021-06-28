@@ -8,7 +8,7 @@
     }
   },
   "extra": {
-    "class": "ServiceInstallerPlugin"
+    "class": "XinMo\\ServicePlugin\\ServiceInstallerPlugin"
   },
   "require": {
     "composer-plugin-api": ">=v1.0"
