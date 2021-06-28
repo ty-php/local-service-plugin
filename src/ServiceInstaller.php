@@ -12,12 +12,11 @@ class ServiceInstaller extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         $prefix = substr($package->getPrettyName(), 0, 14);
-        var_dump($prefix);
         if ('xinmo/service-' !== $prefix) {
             throw new \InvalidArgumentException('The package name:' . $prefix . ',unable to installed, should always start their package name with "wwwcto/plugin-"');
         }
 
-        return 'common/service';
+        return 'common/service' . substr($package->getPrettyName(), 14);
     }
 
     /**
