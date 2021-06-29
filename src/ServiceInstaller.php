@@ -11,7 +11,8 @@ class ServiceInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        if ('xinmo/rpc' == $package->getPrettyName()) {
+        $commonPlugin = ['xinmo/rpc', 'xinmo/jobcenter'];
+        if (in_array($package->getPrettyName(), $commonPlugin)) {
             return 'common/' . substr($package->getPrettyName(), 6);
         }
 
