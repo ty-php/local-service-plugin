@@ -12,6 +12,7 @@ class ServiceInstaller extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         if ('xinmo/rpc' == $package->getPrettyName()) {
+            var_dump(substr($package->getPrettyName(), 6));
             return 'common/' . substr($package->getPrettyName(), 6);
         }
 
@@ -28,6 +29,13 @@ class ServiceInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'service-plugin' === $packageType;
+        if ('service-plugin' === $packageType) {
+            return true;
+        } elseif ('common-plugin' === $packageType) {
+            var_dump(1111);
+            return true;
+        }
+
+        return false;
     }
 }
