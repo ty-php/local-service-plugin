@@ -12,4 +12,10 @@ class ServiceInstallerPlugin implements PluginInterface
         $installer = new ServiceInstaller($io, $composer);
         $composer->getInstallationManager()->addInstaller($installer);
     }
+    public function uninstall(Composer $composer, IOInterface $io) {
+        
+    }
+    public function deactivate(Composer $composer, IOInterface $io) {
+        
+    }
 }
