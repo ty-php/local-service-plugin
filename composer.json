@@ -1,5 +1,5 @@
 {
-  "name": "typhp/service-plugin",
+  "name": "ty-php/service-plugin",
   "description": "自定义包安装路径插件",
   "type": "composer-plugin",
   "autoload": {
