@@ -1,14 +1,14 @@
 {
-  "name": "xinmo/service-plugin",
+  "name": "typhp/service-plugin",
   "description": "自定义包安装路径插件",
   "type": "composer-plugin",
   "autoload": {
     "psr-4": {
-      "XinMo\\ServicePlugin\\": "src"
+      "TyPHP\\ServicePlugin\\": "src"
     }
   },
   "extra": {
-    "class": "XinMo\\ServicePlugin\\ServiceInstallerPlugin"
+    "class": "TyPHP\\ServicePlugin\\ServiceInstallerPlugin"
   },
   "require": {
     "composer-plugin-api": ">=v1.0"

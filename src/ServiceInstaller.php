@@ -1,5 +1,5 @@
 <?php
-namespace XinMo\ServicePlugin;
+namespace TyPHP\ServicePlugin;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
