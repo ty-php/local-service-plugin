@@ -16,7 +16,7 @@ class ServiceInstaller extends LibraryInstaller
             return 'common/' . substr($package->getPrettyName(), 6);
         }
 
-        $prefix = substr($package->getPrettyName(), 0, 14);
+        $prefix = substr($package->getPrettyName(), 0, 15);
         if ('ty-php/service-' !== $prefix) {
             throw new \InvalidArgumentException('The package name:' . $prefix . ',unable to installed, should always start their package name with "ty-php/service-"');
         }
